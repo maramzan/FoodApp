@@ -21,18 +21,6 @@ const cetegoryData = [
     title: 'SoftDrinks',
     isActive: false,
   },
-  {
-    id: 4,
-    Image: ShrimpIcon,
-    title: 'Seafood',
-    isActive: false,
-  },
-  {
-    id: 5,
-    Image: SodaIcon,
-    title: 'SoftDrinks',
-    isActive: false,
-  },
 ];
 
 export default cetegoryData;

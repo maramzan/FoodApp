@@ -90,4 +90,83 @@ export const styles = StyleSheet.create({
     borderRadius: 26,
     marginVertical: 20,
   },
+  popularWrapper: {
+    paddingBottom: 20,
+  },
+  popularTitle: {
+    fontWeight: '700',
+    fontSize: 16,
+  },
+  popularCardWrapper: {
+    paddingTop: 28,
+    paddingHorizontal: 20,
+    backgroundColor: 'white',
+    borderRadius: 25,
+    flexDirection: 'row',
+    overflow: 'hidden',
+    shadowColor: colors.black,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.05,
+    shadowRadius: 10,
+    elevation: 2,
+  },
+  popularHeaderWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  crown: {
+    color: colors.primary,
+  },
+  popularCardHeading: {
+    marginLeft: 10,
+    fontWeight: '600',
+    color: colors.textDark,
+  },
+  popularCardTitle: {
+    fontWeight: '600',
+    marginTop: 20,
+    color: colors.textDark,
+  },
+  popularCardWieght: {
+    fontWeight: '500',
+    color: colors.textLight,
+    fontSize: 12,
+    marginTop: 5,
+  },
+  popularCardBottom: {
+    marginTop: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  popularAddIconWrapper: {
+    width: 90,
+    height: 53,
+    borderTopRightRadius: 25,
+    borderBottomLeftRadius: 25,
+    backgroundColor: colors.primary,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: -20,
+  },
+  popularRatingWrapper: {
+    flexDirection: 'row',
+    marginLeft: 20,
+    alignItems: 'center',
+  },
+  popularCardRating: {
+    fontWeight: '600',
+    fontSize: 12,
+    color: colors.textDark,
+  },
+  popularImageWrapper: {
+    marginLeft: 40,
+  },
+  popularItemImage: {
+    width: 210,
+    height: 125,
+    resizeMode: 'contain',
+  },
 });
