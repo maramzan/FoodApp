@@ -19,7 +19,7 @@ import popularData from '../../assets/Data/popularData';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-const Home = () => {
+const Home = ({navigation}) => {
   const [searchTxt, setSearchTxt] = useState('');
 
   const renderItem = ({item}) => {
@@ -93,7 +93,10 @@ const Home = () => {
         <View style={styles.popularWrapper}>
           <Text style={styles.popularTitle}>Popular</Text>
           {popularData.map(item => (
-            <TouchableOpacity activeOpacity={0.85} key={item.id}>
+            <TouchableOpacity
+              activeOpacity={0.85}
+              onPress={() => navigation.navigate('ItemDetails')}
+              key={item.id}>
               <View
                 style={[
                   styles.popularCardWrapper,

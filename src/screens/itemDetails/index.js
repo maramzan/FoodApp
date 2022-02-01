@@ -13,7 +13,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import pizza1 from '../../assets/images/pngs/pizza1.png';
 import ingrediantsData from '../../assets/Data/ingrediantsData';
 
-const ItemDetails = () => {
+const ItemDetails = ({navigation}) => {
   console.log({ingrediantsData});
 
   const renderItem = ({item}) => {
@@ -36,9 +36,12 @@ const ItemDetails = () => {
         showsVerticalScrollIndicator={false}>
         {/* Header */}
         <View style={styles.headerView}>
-          <View style={styles.headerBackIconWrapper}>
+          <TouchableOpacity
+            onPress={() => navigation.goBack()}
+            activeOpacity={0.5}
+            style={styles.headerBackIconWrapper}>
             <FeatherIcon size={12} name="chevron-left" />
-          </View>
+          </TouchableOpacity>
           <View style={styles.headerStarIconWrapper}>
             <Entypo name="star" size={12} style={styles.headerStarIcon} />
           </View>
@@ -81,7 +84,9 @@ const ItemDetails = () => {
         </View>
 
         {/* place order button */}
-        <TouchableOpacity style={styles.placeorderBtnWrapper}>
+        <TouchableOpacity
+          activeOpacity={0.5}
+          style={styles.placeorderBtnWrapper}>
           <View style={styles.placeorderBtn}>
             <Text style={styles.placeorderTxt}>Place an order</Text>
             <FeatherIcon
