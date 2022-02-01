@@ -4,12 +4,14 @@ import User from './src/screens/user';
 import {Provider} from 'react-redux';
 import store from './src/redux/store';
 import Home from './src/screens/home';
+import ItemDetails from './src/screens/itemDetails';
 
 const App = () => {
   return (
     <Provider store={store}>
       {/* <User /> */}
-      <Home />
+      {/* <Home /> */}
+      <ItemDetails />
     </Provider>
   );
 };

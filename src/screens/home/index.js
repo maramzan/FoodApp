@@ -93,7 +93,7 @@ const Home = () => {
         <View style={styles.popularWrapper}>
           <Text style={styles.popularTitle}>Popular</Text>
           {popularData.map(item => (
-            <TouchableOpacity key={item.id}>
+            <TouchableOpacity activeOpacity={0.85} key={item.id}>
               <View
                 style={[
                   styles.popularCardWrapper,
